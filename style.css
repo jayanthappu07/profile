@@ -1,0 +1,115 @@
+.header{
+    font-family: 'Poppins', serif;
+    font-size: 15px;
+    text-align: center;
+    background-color:rgb(34, 29, 46);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    border-radius:5px;
+    margin-right:auto;
+    margin-left: auto;
+    color: white;
+  
+ 
+    
+  }
+  footer{
+    background-color:rgb(34, 29, 46);
+    background-attachment: fixed;
+    margin:1px;
+    padding: 20px ;
+    color:white;
+    border-radius: 5px;
+  
+  
+  }
+ 
+  table, th, td {
+        border-style:  solid ;
+        border-radius: 5px;
+        border-color:#f5deb3;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 10px;
+        width: 600px;
+        height: 50px;
+     
+}
+th {
+  /* background-color: #04AA6D; */
+  color:black;
+}
+div.container {
+    text-align: center;
+  }
+  
+  ul.myUL {
+    display: inline-block;
+    text-align: left;
+  }
+  div.container1{
+    text-align: center;
+  }
+  
+  ul.myUL1{
+    display: inline-block;
+    text-align: left;
+  }
+  body{
+    font-family: 'Poppins', serif;
+    font-size: 15px;
+    background-image: url(img/background.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .p{
+    border-style: solid;
+    border-width: 5px;
+    padding: 5px;
+    border-color: #f5deb3;
+    border-radius: 5px;
+    font-style: italic;
+   
+  }
+  .profile img{
+         margin: 20px;
+          border-radius:10px;
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+          object-fit: cover;
+  }
+
+
+.email{
+  padding-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+
+}
+
+.column1, .column2, .column3, .column4 {
+  flex: 1;
+  text-align: center;
+}
+
+.column1 img, .column2 img, .column3 img, .column4 img {
+  width: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  
+ 
+  transition: transform 0.4s ease; /* Smooth transition for the zoom effect */
+}
+
+.column1 img:hover, .column2 img:hover, .column3 img:hover, .column4 img:hover {
+  transform: scale(1.2); /* Zoom in on hover */
+}
