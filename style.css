@@ -111,5 +111,6 @@ div.container {
 }
 
 .column1 img:hover, .column2 img:hover, .column3 img:hover, .column4 img:hover {
-  transform: scale(1.2); /* Zoom in on hover */
+  transform: scale(1.2);
+    cursor: pointer;/* Zoom in on hover */
 }
