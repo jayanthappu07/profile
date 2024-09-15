@@ -7,7 +7,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 10px;
+    padding: 5px;
     border-radius:5px;
     margin-right:auto;
     margin-left: auto;
@@ -113,4 +113,37 @@ div.container {
 .column1 img:hover, .column2 img:hover, .column3 img:hover, .column4 img:hover {
   transform: scale(1.2);
     cursor: pointer;/* Zoom in on hover */
+}
+/* Container to hold the contact items side by side */
+.contact-container {
+  display: flex;
+  justify-content: center; /* Centers the items horizontally */
+  align-items: center; /* Aligns items vertically */
+  gap: 30px; /* Space between the items */
+  margin-top: 20px;
+}
+
+/* Styling for individual contact items */
+.contact-item {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Ensures the text color doesn't change */
+}
+
+/* Styling for the contact images */
+.contact-img {
+  width: 50px; /* Adjust size as needed */
+  margin-bottom: 10px; /* Space between image and text */
+  border-radius: 10px; /* Add rounded corners */
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for contact images */
+.contact-img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
