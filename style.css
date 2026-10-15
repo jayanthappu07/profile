@@ -1,91 +1,112 @@
-.header{
-    font-family: 'Poppins', serif;
-    font-size: 15px;
-    text-align: center;
-    background-color:rgb(34, 29, 46);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 5px;
-    border-radius:5px;
-    margin-right:auto;
-    margin-left: auto;
-    color: white;
-  
- 
-    
-  }
-  footer{
-    background-color:rgb(34, 29, 46);
-    background-attachment: fixed;
-    margin:1px;
-    padding: 20px ;
-    color:white;
-    margin-top: 20px;
-    border-radius: 5px;
-  
-  
-  }
- 
-  table, th, td {
-        border-style:  solid ;
-        border-radius: 5px;
-        border-color:#f5deb3;
-        border-collapse: collapse;
-        text-align: center;
-        padding: 10px;
-        width: 600px;
-        height: 50px;
-     
+.header {
+  font-family: 'Poppins', serif;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgb(34, 29, 46);
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  border: 1px solid #ccc;
+
+
+
 }
+
+footer {
+  background-color: rgb(34, 29, 46);
+  background-attachment: fixed;
+  margin: 1px;
+  padding: 20px;
+  color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+
+
+}
+
+table,
+th,
+td {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #f5deb3;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+  width: 600px;
+  height: 50px;
+
+}
+
 th {
   /* background-color: #04AA6D; */
-  color:black;
+  color: black;
 }
+
 div.container {
-    text-align: center;
-  }
-  
-  ul.myUL {
-    display: inline-block;
-    text-align: left;
-  }
-  div.container1{
-    text-align: center;
-  }
-  
-  ul.myUL1{
-    display: inline-block;
-    text-align: left;
-  }
-  body{
-    font-family: 'Poppins', serif;
-    font-size: 15px;
-    background-image: url(img/background.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .p{
-    border-style: solid;
-    border-width: 5px;
-    padding: 5px;
-    border-color: #f5deb3;
-    border-radius: 5px;
-    font-style: italic;
-   
-  }
-  .profile img{
-         margin: 20px;
-          border-radius:10px;
-          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-          object-fit: cover;
-  }
+  text-align: center;
+}
 
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+  color: white;
+}
 
-.email{
+div.container1 {
+  text-align: center;
+}
+
+ul.myUL1 {
+  display: inline-block;
+  text-align: left;
+  color: white;
+}
+
+body {
+  font-family: 'Poppins', serif;
+
+  background-image: url(img/background.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.p {
+  font-size: large;
+  font-family: 'Poppins', serif;
+  color: white;
+  font-style: italic;
+
+}
+
+.profile img {
+  margin: 20px;
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.skills {
+  text-align: center;
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: rgb(34, 29, 46);
+}
+
+.email {
   padding-bottom: 5px;
 }
 
@@ -97,54 +118,76 @@ div.container {
 
 }
 
-.column1, .column2, .column3, .column4 {
+.column1,
+.column2,
+.column3,
+.column4 {
   flex: 1;
   text-align: center;
 }
 
-.column1 img, .column2 img, .column3 img, .column4 img {
+.column1 img,
+.column2 img,
+.column3 img,
+.column4 img {
   width: 100px;
   margin: 10px;
   border-radius: 10px;
-  
- 
-  transition: transform 0.4s ease; /* Smooth transition for the zoom effect */
+
+
+  transition: transform 0.4s ease;
+  /* Smooth transition for the zoom effect */
 }
 
-.column1 img:hover, .column2 img:hover, .column3 img:hover, .column4 img:hover {
+.column1 img:hover,
+.column2 img:hover,
+.column3 img:hover,
+.column4 img:hover {
   transform: scale(1.2);
-    cursor: pointer;/* Zoom in on hover */
+  cursor: pointer;
+  /* Zoom in on hover */
 }
+
 /* Container to hold the contact items side by side */
 .contact-container {
   display: flex;
-  justify-content: center; /* Centers the items horizontally */
-  align-items: center; /* Aligns items vertically */
-  gap: 30px; /* Space between the items */
+  justify-content: center;
+  /* Centers the items horizontally */
+  align-items: center;
+  /* Aligns items vertically */
+  gap: 30px;
+  /* Space between the items */
   margin-top: 20px;
 }
 
 /* Styling for individual contact items */
 .contact-item {
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: inherit; /* Ensures the text color doesn't change */
+  color: inherit;
+  /* Ensures the text color doesn't change */
 }
 
 /* Styling for the contact images */
 .contact-img {
-  width: 50px; /* Adjust size as needed */
-  margin-bottom: 10px; /* Space between image and text */
-  border-radius: 10px; /* Add rounded corners */
-  
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  width: 50px;
+  /* Adjust size as needed */
+  margin-bottom: 10px;
+  /* Space between image and text */
+  border-radius: 10px;
+  /* Add rounded corners */
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth hover effect */
 }
 
 /* Hover effect for contact images */
 .contact-img:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  transform: scale(1.1);
+  /* Slight zoom on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add shadow on hover */
 }
