@@ -208,7 +208,8 @@ body {
 .column1,
 .column2,
 .column3,
-.column4 {
+.column4,
+.column5{
   flex: 1;
   text-align: center;
 }
@@ -216,7 +217,9 @@ body {
 .column1 img,
 .column2 img,
 .column3 img,
-.column4 img {
+.column4 img,
+.column5 img
+ {
   width: 100px;
   margin: 10px;
   border-radius: 10px;
@@ -226,10 +229,13 @@ body {
   /* Smooth transition for the zoom effect */
 }
 
+
+
 .column1 img:hover,
 .column2 img:hover,
 .column3 img:hover,
-.column4 img:hover {
+.column4 img:hover,
+.column5 img:hover {
   transform: scale(1.2);
   cursor: pointer;
   /* Zoom in on hover */
