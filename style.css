@@ -59,15 +59,102 @@ ul.myUL {
   color: white;
 }
 
-div.container1 {
+
+
+/* Achievements Heading */
+.achievements-title {
   text-align: center;
+  margin: 40px 0 30px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #22D3EE;
+  letter-spacing: 1px;
 }
 
-ul.myUL1 {
-  display: inline-block;
-  text-align: left;
-  color: white;
+/* Achievements Grid */
+.achievements-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
 }
+
+/* Achievement Card */
+.achievement-card {
+  background: #1E293B;
+  padding: 28px 22px;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Card Hover */
+.achievement-card:hover {
+  transform: translateY(-6px);
+  border-color: #3B82F6;
+  box-shadow: 0 10px 28px rgba(59, 130, 246, 0.18);
+}
+
+/* Achievement Name */
+.achievement-card h3 {
+  color: #F8FAFC;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Organization */
+.achievement-card p {
+  color: #CBD5E1;
+  font-size: 14px;
+  margin-bottom: 22px;
+}
+
+/* Certificate Button */
+.certificate-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #2563EB, #3B82F6);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover */
+.certificate-btn:hover {
+  background: linear-gradient(135deg, #0891B2, #06B6D4);
+  color: #0F172A;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(6, 182, 212, 0.25);
+}
+
+/* Keyboard Accessibility */
+.certificate-btn:focus-visible {
+  outline: 3px solid #22D3EE;
+  outline-offset: 4px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .achievements-title {
+    font-size: 25px;
+  }
+
+  .achievements-container {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+}
+
+
 
 body {
   font-family: 'Poppins', serif;
@@ -190,4 +277,38 @@ body {
   /* Slight zoom on hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   /* Add shadow on hover */
+}
+
+/* Modern Portfolio Button */
+.project-btn {
+  display: inline-block;
+  padding: 12px 26px;
+  background: linear-gradient(135deg, #2563EB, #3B82F6);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+}
+
+/* Hover Effect */
+.project-btn:hover {
+  background: linear-gradient(135deg, #0891B2, #06B6D4);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Click Effect */
+.project-btn:active {
+  transform: translateY(0);
+}
+
+/* Keyboard Accessibility */
+.project-btn:focus-visible {
+  outline: 3px solid #637bee;
+  outline-offset: 4px;
 }
